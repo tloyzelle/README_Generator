@@ -5,6 +5,8 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const path = require('path');
 
 // TODO: Create an array of questions for user input
+//Questions involving the title, description, use, and installation of the project/application
+//Also involving what the guidelines are, what license is used, github username, and email
 const questions = [ {
     type: "input",
     name: "Title",
