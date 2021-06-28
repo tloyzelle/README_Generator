@@ -56,6 +56,7 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
+//uses prompts to create a readme using the responses
 function init() {
     inquirer.prompt(questions).then((inquirerResponse) => {
         console.log ('generating README.md...');
