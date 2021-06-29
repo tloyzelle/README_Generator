@@ -67,13 +67,13 @@ const generateReadme = (answers) =>
     answers.email
   }</a>
 `;
-
+//Building ReadMe 
 const build = () => {
   promptUser()
     .then((answers) => {
-      writeFileAsync("myreadme.md", generateReadme(answers));
+      writeFileAsync("ReadMe.md", generateReadme(answers));
     })
-    .then(() => console.log("Successfully wrote to myreadme.md"))
+    .then(() => console.log("Successfully wrote to ReadMe.md"))
     .catch((err) => console.error(err));
 };
 
